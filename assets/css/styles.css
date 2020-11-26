@@ -45,7 +45,7 @@ a {
   }
   .header__title {
     font-size: 2.75rem;
-    margin: 0 0 2rem; } 
+    margin: 1rem 0 2rem; } 
   .header__image {
     padding: 1rem;
     background-color: var(--white);
@@ -80,7 +80,6 @@ a {
 .btn {
   background-color: var(--dark);
   color: var(--white);
-  text-transform: uppercase;
   text-align: center;
   font-size: 0.875rem;
   padding: 1.0625rem;
@@ -111,7 +110,7 @@ a {
 
 .boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 2.375rem;
   margin-top: 3.125rem; }
 
@@ -124,27 +123,27 @@ a {
   border-radius: .1875rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
   background-color: var(--white);
-  text-align: center;
-  transition: all .15s ease-in-out; }
+  text-align: center; }
   .box__title {
     margin: 3rem 0 .875rem;
     text-transform: uppercase;
     font-size: 1.875rem;
     font-weight: 400;
-    color: var(--gray);
-    transition: all .15s ease-in-out; }
+    color: var(--gray); }
   .box__subtext {
     text-transform: uppercase;
     margin: 0 0 2.25rem;
     font-size: .875rem;
     font-weight: bold;
     letter-spacing: .0625em;
-    color: var(--dark);
-    transition: all .15s ease-in-out; }
+    color: var(--dark); }
   .box__button {
     font-weight: 700;
     margin: auto 0 0; }
 
+.footer {
+  text-align: center;
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
