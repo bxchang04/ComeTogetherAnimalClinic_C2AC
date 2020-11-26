@@ -84,13 +84,6 @@ a {
   font-size: 0.875rem;
   padding: 1.0625rem;
   transition: all .15s ease-in-out; }
-  .btn:not(.active):hover, .btn:not(.active):focus {
-    background-color: var(--darker);
-    cursor: pointer; }
-  .btn.active {
-    background-color: var(--tan);
-    color: var(--darker);
-    font-weight: 700; }
 
 .container {
   max-width: 1134px;
@@ -124,19 +117,16 @@ a {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
   background-color: var(--white);
   text-align: center; }
-  .box__title {
-    margin: 3rem 0 .875rem;
-    text-transform: uppercase;
-    font-size: 1.875rem;
-    font-weight: 400;
-    color: var(--gray); }
-  .box__subtext {
-    text-transform: uppercase;
-    margin: 0 0 2.25rem;
-    font-size: .875rem;
-    font-weight: bold;
-    letter-spacing: .0625em;
-    color: var(--dark); }
+  .box img {
+    width: 100%; }
+  #jen {
+    width: 99%; }
+  #suzy {
+    width: 100%; }
+  #emara {
+    width: 97%; }
+  #tina {
+    width: 100%; }
   .box__button {
     font-weight: 700;
     margin: auto 0 0; }
