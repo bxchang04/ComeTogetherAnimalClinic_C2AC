@@ -37,15 +37,22 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
   color: var(--white);
-  padding: 3.75rem 0 3.75rem; }
+  padding: 1rem 0 3.75rem; }
+  .header__content {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
   .header__title {
-    text-align: center;
     font-size: 2.75rem;
-    margin: 3rem 0 .5rem; }
-  .header__lead {
-    text-align: center;
+    margin: 0 0 2rem; } 
+  .header__image {
+    padding: 1rem;
+    background-color: var(--white);
+  }
+  .header__subtitle {
     font-size: 2rem;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     max-width: 36rem; }
 
 .top {
@@ -85,26 +92,6 @@ a {
     background-color: var(--tan);
     color: var(--darker);
     font-weight: 700; }
-
-.tabs {
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-  user-select: none;
-  transform: translateY(-50%); }
-  .tabs__form {
-    display: inline-flex;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); }
-  @media (min-width: 576px) {
-    .tabs .btn {
-      padding-left: 3rem;
-      padding-right: 3rem; } }
-  .tabs .active {
-    margin: -.125rem 0; }
-  .tabs-sticky {
-    position: sticky;
-    top: 3rem;
-    z-index: 1; }
 
 .container {
   max-width: 1134px;
@@ -155,22 +142,9 @@ a {
     color: var(--dark);
     transition: all .15s ease-in-out; }
   .box__button {
-    opacity: 0;
     font-weight: 700;
-    margin: auto 0 0;
-    transition: all .15s ease-in-out; }
-  .box:hover, .box:focus {
-    border-top-color: var(--danger);
-    box-shadow: 0 0.25rem 1.75rem rgba(0, 50, 100, 0.15);
-    transform: translateY(-0.5rem); }
-    .box:hover .box__title, .box:focus .box__title {
-      color: var(--brown);
-      transform: translateY(-2rem); }
-    .box:hover .box__subtext, .box:focus .box__subtext {
-      color: var(--darker);
-      transform: translateY(-2rem); }
-    .box:hover .box__button, .box:focus .box__button {
-      opacity: 1; }
+    margin: auto 0 0; }
+
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
