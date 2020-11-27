@@ -8,6 +8,7 @@
     <meta name="Website for the Come Together Animal Clinic" content="Come Together Animal Clinic">
     <meta name="JSnow and benxc" content="C2AC">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/48ce541163.js" crossorigin="anonymous"></script>
   </head>
 
 
@@ -25,14 +26,14 @@
     <header class="header">
       <div class="container">
 				<div class="top">
-					<a href="#" class="top__logo" title="Home"><img src="./assets/img/logo_small.png" alt="C2AC Logo"/></a>
+					<a href="https://www.c2ac.org" class="top__logo" title="Home"><img src="./assets/img/logo_small.png" alt="C2AC Logo"/></a>
 
           <!--Begin: Nav-->
           <nav class="nav">
-            <a href="#" class="nav__item">About Us</a>
-            <a href="#" class="nav__item">Our Team</a>
-            <a href="#" class="nav__item">Visit Us</a>
-            <a href="#" class="nav__item">Contact Us</a>
+            <a href="#about-us" class="nav__item">About Us</a>
+            <a href="#our-team" class="nav__item">Our Team</a>
+            <a href="#visit-us" class="nav__item">Visit Us</a>
+            <a href="#contact-us" class="nav__item">Contact Us</a>
           </nav>
           <!--End: Nav-->
         </div>
@@ -52,7 +53,7 @@
     <main class="container">
 
       <!--Begin: About us--> 
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <h2 class="about-us__title">About Us</h2>
         <h3><i>We aim to be the most affordable, professional, and friendly animal clinic around.</i><h3></h3>
         <h3><i>Our experienced staff would love to see your furry family members soon!</i></h3>
@@ -75,7 +76,7 @@
       <!--Begin: Staff--> 
 
 
-      <section class="our-team">
+      <section class="our-team" id="our-team">
         <h2 class="our-team__title">Our Team</h2>
 
         <section class="boxes">
@@ -120,7 +121,7 @@
 
 
       <!--Begin: Visit us--> 
-      <section class="visit-us">
+      <section class="visit-us" id="visit-us">
         <h2 class="visit-us__title">Visit Us</h2>
         <p>
           <b style="line-height: 2">Monday</b><span>: 10:00 AM - 2:00 PM</span>
@@ -144,22 +145,28 @@
 
 
       <!--Begin: Contact us--> 
-      <section class="contact-us">
+      <section class="contact-us" id="contact-us">
         <h2 class="contact-us__title">Contact Us</h2>
         <p>
           155 Neponset Ave.<br>
           Boston, MA 02122
         </p>
-        <a href="mailto:ComeTogetherAnimalClinic@gmail.com" alt="email:ComeTogetherAnimalClinic@gmail.com">
-          <i class="fab fa-envelope">ComeTogetherAnimalClinic@gmail.com</i>
-        </a>
-        <a href="https://www.facebook.com/lowcostanimalcare/">
-          <i class="fab fa-facebook-f"></i>
-        </a>
+        <div>
+          <a href="mailto:ComeTogetherAnimalClinic@gmail.com" alt="email:ComeTogetherAnimalClinic@gmail.com">
+            <i class="fab fa-envelope">ComeTogetherAnimalClinic@gmail.com</i>
+          </a>
+        </div>
         <div class="fab fa-phone">(857) 496-1508</div>
-        <a href="https://www.c2ac.com" target="_blank">
-          www.C2AC.com
-        </a>
+        <div>  
+          <a href="https://www.c2ac.org" target="_blank">
+            www.C2AC.org
+          </a>
+        </div>
+        <div class="facebook">
+          <a href="https://www.facebook.com/lowcostanimalcare/">
+            Our <i class="fab fa-facebook-f"></i>acebook
+          </a>                
+        </div>
       </section>
       <!--End: Contact us--> 
 
@@ -174,6 +181,34 @@
       <p>2020 Created by JSnow and <a href="https://www.benxc.com" target="_blank">benxc</a>. All rights reserved.</p>
     </footer>
     <!--End: Footer-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
 
 
   </body>
