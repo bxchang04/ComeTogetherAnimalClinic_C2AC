@@ -5,7 +5,7 @@
   --dark: #696579;
   --darker: #52485d;
   --tan: #fdecca;
-  --brown: #caa97d;
+  --brown: #b97822;
   --danger: #d83a6a; }
 
 *,
@@ -123,7 +123,8 @@ a {
 .contact-us {
   display: flex;
   flex-direction: column;
-  line-height: 3.5rem;
+  font-size: 3rem;
+  line-height: 5rem;
 }
 
 .boxes {
@@ -168,13 +169,17 @@ a {
   height: 300px;
 }
 
-.facebook {
-  font-size: 2rem;
-}
-
 .footer {
   text-align: center;
   font-size: 0.75rem;
+}
+
+.facebook {
+  padding: 3rem;
+}
+
+.facebook a{
+  color: blue;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
