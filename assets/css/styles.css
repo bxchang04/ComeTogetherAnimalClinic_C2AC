@@ -61,7 +61,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  font-size: 1.5rem; }
+  font-size: 2rem; }
   @media (min-width: 576px) {
     .top {
       flex-direction: row; }
@@ -70,10 +70,6 @@ a {
       
       .top__nav__item:last-child {
         margin-right: -2rem; } }
-
-.nav {
-  padding-left: 3rem; 
-}
 
 .nav__item {
   display: inline-block;
